@@ -1,14 +1,16 @@
-function f(x, def){
-    if(!def)
+function f(x, def) {
+    if (!def)
         return x;
     else
-        return 1;
+        return x;
 }
 
-function ReLu(x, def){
+function ReLu(x) {
 
-    if(!def)
-        return Math.max(0, x);
-    else
-        return (x <= 0)?0:x;
+    return Math.max(0, x);
+}
+
+function Sigmoid(x) {
+
+    return 1 / (1 + Math.pow(2.718282, -x));
 }
